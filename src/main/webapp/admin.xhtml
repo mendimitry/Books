@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+    <title>Окно с приветствием</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+
+</h:head>
+<script type="text/javascript">
+    alert("Спасибо, что зашли," + " " +"#{login.user}");
+</script>
+<h:body>
+    <h:form>
+       <h1><h:commandLink action="#{login.logout}" value="Logout"></h:commandLink></h1>
+
+        <h1><a href='${pageContext.request.contextPath}/Books_war_exploded/Insert'>Go to Admin</a></h1>
+
+        <h1><a href='${pageContext.request.contextPath}/Books_war_exploded/test'>Go to AJAX</a> </h1>
+    </h:form>
+
+</h:body>
+</html>
